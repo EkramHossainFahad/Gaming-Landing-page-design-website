@@ -1,12 +1,12 @@
 /* work sans google font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans';
 }
-header{
+header {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -68,28 +68,36 @@ header{
 
 /* Banner Section Style Start */
 
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    margin-left: 0;
 }
-.banner-content{
+.banner-content {
     background-image: url(./images/Group14.png);
+    background-position: center;
+    background-size: cover;
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     width: 50%;
+    text-align: center;
+    padding: 148px 0px 148px 148px;
 }
-.banner-img{
+.banner-img {
     width: 50%;
+    margin-right: -100px;
 }
-.banner-img img{
+.banner-img img {
     width: 100%;
 }
-.banner-title{
+.banner-title {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
 }
-.banner-title-goat{
+.banner-title-goat {
     font-size: 95px;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -97,13 +105,13 @@ header{
     -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
 }
-.banner-description{
+.banner-description {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 17px;
 }
-.btn-primary{
+.btn-primary {
     padding: 21px 40px;
     margin-left: 24px;
     border-radius: 48px;
@@ -114,16 +122,15 @@ header{
     margin-top: 24px;
     margin-left: 0;
 }
-.btn-1{
+.btn-1 {
     background: #FF42A5;
+    margin-right: 25px;
 }
-.btn-2{
+.btn-2 {
     background: #4EC5F7;
 }
 
-
-
-/* Gamer section style Start */
+/* Gamer Section Style Start */
 
 .gamer-container {
     display: flex;
@@ -135,11 +142,6 @@ header{
     max-width: 1400px;
     margin: 0 auto;
 }
-
-.gamer-img {}
-
-.gamer-content {}
-
 .gamer-title {
     font-size: 48px;
     font-weight: 700;
@@ -149,7 +151,6 @@ header{
     -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
 }
-
 .gamer-description {
     color: #534C64;
     font-size: 18px;
@@ -157,21 +158,16 @@ header{
     line-height: 30px;
     margin-bottom: 30px;
 }
-
 .btn-3 {
     background: #FF42A5;
     margin-bottom: 24px;
     text-transform: uppercase;
 }
-
-.gamer-info {}
-
 .gamer-info-top {
     color: #534C64;
     font-size: 22px;
     font-weight: 500;
 }
-
 .gamer-info-bottom {
     color: #534C64;
     font-size: 30px;
@@ -184,7 +180,6 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 .online-game-title {
     color: #0B0223;
     text-align: right;
@@ -193,7 +188,6 @@ header{
     margin-top: 120px;
     margin-bottom: 16px;
 }
-
 .funny-videos {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -201,25 +195,21 @@ header{
     -webkit-text-fill-color: transparent;
     font-size: 48px;
 }
-
 .online-game-description {
     color: #534C64;
     text-align: center;
     font-size: 18px;
     margin-bottom: 48px;
 }
-
 .card {
     display: flex;
     gap: 24px;
     padding: 0 240px 120px 240px;
 }
-
 .card-caption {
     margin-top: 24px;
     color: #534C64;
     font-size: 20px;
-
 }
 
 /* Play Section Style Start */
@@ -228,51 +218,42 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
-
 .play-title {
     text-align: right;
     font-size: 48px;
     font-style: normal;
     margin-bottom: 24px;
 }
-
 .play-content {
     margin-top: -300px;
     margin-left: 200px;
 }
-
 .play-description {
     color: #534C64;
     text-align: right;
     font-size: 18px;
     line-height: 30px;
 }
-
 .Play-Instantly {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .play-img {
     height: 90%;
     margin-left: -200px;
 }
-
 .play-img img {
     width: 635px;
     height: 650px;
 }
-
 .girl-img {
     position: relative;
     bottom: 290px;
     right: 160px;
 }
-
 .girl-img img {
     width: 318px;
     height: 365px;
@@ -285,14 +266,12 @@ header{
 .games-catagory-container {
     align-items: center;
 }
-
 .games-catagory-content {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 240px 150px 240px;
     align-items: center;
 }
-
 .items {
     display: flex;
     align-items: center;
@@ -301,10 +280,10 @@ header{
     height: 80px;
     margin-right: 35px;
 }
-.items:hover{
+.items:hover {
     border: 2px solid #FF42A5;
 }
-.items p:hover{
+.items p:hover {
     color: #FF42A5;
 }
 .games-catagory-description {
@@ -312,7 +291,6 @@ header{
     font-size: 20px;
     font-weight: 600;
 }
-
 .games-catagory-img {
     padding: 10px;
 }
@@ -327,7 +305,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .footer-logo {
     display: flex;
@@ -375,47 +352,86 @@ footer {
     font-size: 16px;
     margin-bottom: 130px;
 }
-
-
-
-
-
+/* Footer Section End Here */
 
 
 
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
+
     /* Responsive Navbar */
     .nav-container {
-       flex-direction: column;
+        flex-direction: column;
     }
     .nav-menu>ul {
-       flex-direction: column;
+        flex-direction: column;
+    }
+    .logo-container {
+        margin-bottom: 55px;
     }
 
     /* Responsive Banner Section */
-    .banner-container{
+    .banner-container {
         flex-direction: column;
+        flex-direction: column-reverse;
     }
-    
+    .banner-content {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
 
-    /* Responsive Footer */
-    .footer-container {
+    /* Responsive Gamer Section */
+
+    .gamer-container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .gamer-img {
+        width: 458px;
+        height: 320px;
+    }
+
+    /* Responsivve Online Section */
+    .online-game-container{
         
     }
-    .services{
+    .online-game-content {
+        display: flex;
+        justify-content: center;
+    }
+    .online-game-title{
+        text-align: center;
+    }
+    .card {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 220px;
+    }
+
+    /* Responsive Online Section */
+    .play-container {
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+    }
+
+    /* Responsive Catagory Section */
+
+
+    /* Responsive Footer */
+    .services {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-     .services p{
-       
-     }
-     .social-icon{
+    .social-icon {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .conditions{
+    .conditions {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
