@@ -1,62 +1,54 @@
 /* work sans google font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans';
 }
-
-header {
+header{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 39px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-
 .logo-container {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .logo-img {
     width: 85px;
     height: 40px;
 }
-
 .logo-container>p>a {
     text-decoration: none;
     font-size: 45px;
     font-weight: 700;
     color: #0B0223;
 }
-
 .gamer-logo {
     color: #FF42A5;
 }
-
 .nav-menu>ul {
     display: flex;
     align-items: center;
     gap: 32px;
     font-size: 18px;
 }
-
 .nav-menu ul li {
     list-style: none;
 }
-
 .nav-menu ul li a {
     text-decoration: none;
     color: #3C354F;
 }
-
 .nav-icon {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
@@ -65,57 +57,53 @@ header {
     gap: 24px;
     padding: 17px 24px;
 }
-
 .youtube-icon {
     margin-right: 16px;
     color: red;
 }
-
 .tiktok-icon {
     color: #111111;
     filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
 
 /* Banner Section Style Start */
-.banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 1400px;
-}
 
-.banner-content {
-    background-image: url(./images/Group\ 14.png);
-    padding: 140px 200px;
+.banner-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.banner-content{
+    background-image: url(./images/Group14.png);
     width: 50%;
 }
-
-.banner-title {
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-title{
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
 }
-
-.banner-title-goat {
-    text-align: center;
+.banner-title-goat{
     font-size: 95px;
-    font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
 }
-
-.banner-description {
+.banner-description{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 17px;
 }
-
-.btn-primary {
+.btn-primary{
     padding: 21px 40px;
     margin-left: 24px;
     border-radius: 48px;
@@ -126,23 +114,14 @@ header {
     margin-top: 24px;
     margin-left: 0;
 }
-
-.btn-1 {
+.btn-1{
     background: #FF42A5;
 }
-
-.btn-2 {
+.btn-2{
     background: #4EC5F7;
 }
 
-.banner-img {
-    width: 50%;
-}
 
-.banner-img img {
-    width: 711px;
-    height: 446px;
-}
 
 /* Gamer section style Start */
 
@@ -153,6 +132,8 @@ header {
     gap: 52px;
     align-items: center;
     text-align: right;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .gamer-img {}
@@ -247,6 +228,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .play-title {
@@ -256,7 +238,10 @@ header {
     margin-bottom: 24px;
 }
 
-.play-content {}
+.play-content {
+    margin-top: -300px;
+    margin-left: 200px;
+}
 
 .play-description {
     color: #534C64;
@@ -271,24 +256,167 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .play-img {
     height: 90%;
-    margin-left: 90px;
+    margin-left: -200px;
 }
 
 .play-img img {
     width: 635px;
     height: 650px;
 }
+
 .girl-img {
     position: relative;
-    bottom: 110px;
+    bottom: 290px;
+    right: 160px;
 }
 
 .girl-img img {
     width: 318px;
     height: 365px;
     border-radius: 8px;
-    border: 10px solid #FFF;
-    background: lightgray 0px -0.304px / 100% 117.229% no-repeat;
+    border: 2px solid #FFF;
+    background: lightgray 0px / 100% 117.229% no-repeat;
+}
+
+/* Games Catagory Style Start */
+.games-catagory-container {
+    align-items: center;
+}
+
+.games-catagory-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 240px 150px 240px;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 243px;
+    height: 80px;
+    margin-right: 35px;
+}
+.items:hover{
+    border: 2px solid #FF42A5;
+}
+.items p:hover{
+    color: #FF42A5;
+}
+.games-catagory-description {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.games-catagory-img {
+    padding: 10px;
+}
+
+/* footer section style start */
+footer {
+    background: #0B0223;
+    color: white;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    gap: 20px;
+    margin-bottom: 73px;
+}
+.footer-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.footer-logo-text {
+    color: #FF42A5;
+}
+.services {
+    display: flex;
+    gap: 60px;
+}
+.services p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 66px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.footer-container .conditions {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 28px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+}
+.footer-bottom {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 130px;
+}
+
+
+
+
+
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    /* Responsive Navbar */
+    .nav-container {
+       flex-direction: column;
+    }
+    .nav-menu>ul {
+       flex-direction: column;
+    }
+
+    /* Responsive Banner Section */
+    .banner-container{
+        flex-direction: column;
+    }
+    
+
+    /* Responsive Footer */
+    .footer-container {
+        
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+     .services p{
+       
+     }
+     .social-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .conditions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
